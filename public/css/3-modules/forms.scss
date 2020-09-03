@@ -1,0 +1,24 @@
+#guest-form {
+  input {
+    @include input;
+    width: 300px;
+  }
+
+  select {
+    @include input;
+  }
+}
+
+footer {
+  input {
+    border: 1px solid #543bc4;
+    background-color: #3d2d85;
+    border-radius: 20rem;
+    padding: 10px;
+  }
+
+  input::placeholder {
+    color: #999999;
+    font-weight: 700;
+  }
+}

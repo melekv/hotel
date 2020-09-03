@@ -1,0 +1,30 @@
+@mixin linkReset($color) {
+    text-decoration: none;
+    color: $color;
+}
+
+@mixin input {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@mixin flex-box($align, $justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin menu ($display) {
+    display: $display;
+        a {
+            display: block;
+            padding: 15px;
+            @include linkReset($fontColorPrimary);
+
+            &:hover {
+                color: $linkHover;
+                font-weight: 700;
+            }
+        }
+}

@@ -1,0 +1,25 @@
+#about-section {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+
+#about-section-pic img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#about-desc {
+    margin-left: 50px;
+}
+
+#about-desc h1 {
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+#about-desc p {
+    font-size: 1.2rem;
+    color: $fontColorSecondary;
+}

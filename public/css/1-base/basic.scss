@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    height: 100px;
+
+    ul li {
+        @include menu(inline-block);
+    }
+
+    img {
+        position: relative;
+        top: 2px;
+    }
+}

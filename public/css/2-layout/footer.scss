@@ -1,0 +1,20 @@
+footer li {
+    @include menu(block);
+
+    a {
+        padding: 10px 0;
+    }
+}
+
+#newsletter {
+    p {
+        margin: 10px auto;
+    }
+    
+    button {
+        position: relative;
+        left: -32px;
+        background: none;
+        border: none;
+    }
+}

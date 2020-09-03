@@ -1,0 +1,34 @@
+.container-flex {
+    @include flex-box(center, space-between);
+}
+
+.c-flex-start-space {
+    @include flex-box(flex-start, space-between);
+}
+
+.container-flex-about {
+    @include flex-box(center, space-between);
+}
+
+.container-flex-center {
+    @include flex-box(flex-start, center);
+}
+
+.c-flex-center-start {
+    @include flex-box(center, flex-start);
+}
+
+.center80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center60 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.center50 {
+    width: 50%;
+    margin: 0 auto;
+}

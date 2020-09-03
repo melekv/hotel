@@ -1,0 +1,21 @@
+.btn {
+    border-radius: 5px;
+    border: 1px solid #666;
+    background-color: #888;
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+    width: 150px;
+    font-size: 1.5rem;
+
+    &:hover {
+        background-color: #666;
+        font-size: 1.6em;
+    }
+}
+
+.btnAnchor {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}

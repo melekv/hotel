@@ -1,0 +1,53 @@
+@import '_vars';
+@import '_colors';
+
+.container-grid-rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+        "pic title button"
+        "pic info1 info2";
+    
+    h3 {
+        margin-top: 5px;
+    }
+}
+
+.grid-pic {
+    grid-area: pic;
+    margin-right: 20px;
+}
+
+.grid-title {
+    grid-area: title;
+
+    p {
+        color: $fontColorThree;
+    }
+}
+
+.grid-info1 {
+    grid-area: info1;
+}
+
+.grid-info2 {
+    grid-area: info2;
+}
+
+.grid-button {
+    grid-area: button;
+}
+
+.btnDisplay {
+    display: none;
+}
+
+.info-box {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+    font-weight: 700;
+}

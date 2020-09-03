@@ -1,0 +1,103 @@
+#welcome-pic {
+    background-image: url($linkImg + 'room.jpg');
+    background-size: cover;
+    background-position: 0px 80%;
+    background-repeat: no-repeat;
+    height: 500px;
+    animation-name: bg-change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.cover-bg {
+    height: inherit;
+    background: rgba(49, 49, 88, 0.6);
+    color: $bgPrimary;
+    text-align: center;
+
+    p {
+        line-height: 500px;
+        font-size: 4rem;
+        margin: 0;
+    }
+}
+
+#check-in-box {
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    top: -60px;
+}
+
+#check-in-box input,
+#check-in-box select {
+    @include input;
+}
+
+#checkin-error {
+    position: absolute;
+    color: #ff0000;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+#short-desc {
+    opacity: 0;
+    transition: opacity 2s;
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "tekst pic1 pic3"
+        "tekst pic2 pic3"
+    ;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: #777;
+    }
+}
+
+#short-desc1 {
+    grid-area: tekst;
+    padding-top: 20px;
+}
+
+#short-desc2 {
+    grid-area: pic1;
+}
+
+#short-desc2 img,
+#short-desc3 img {
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#short-desc3 {
+    grid-area: pic2;
+}
+
+#short-desc4 {
+    grid-area: pic3;
+}
+
+#short-desc4 img {
+    height: 500px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@keyframes bg-change {
+    0% {background-image: url($linkImg + 'room.jpg');}
+    40% {background-image: url($linkImg + 'room.jpg');}
+    50% {background-image: url($linkImg + 'room1.jpg');}
+    90% {background-image: url($linkImg + 'room1.jpg');}
+    100% {background-image: url($linkImg + 'room.jpg');}
+}
